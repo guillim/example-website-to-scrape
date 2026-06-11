@@ -420,11 +420,77 @@ footer.site-footer .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1.7fr 1fr 1fr 1.3fr;
   gap: 2rem;
 }
-@media (max-width: 720px) {
+@media (max-width: 960px) {
+  footer.site-footer .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
   footer.site-footer .footer-inner { grid-template-columns: 1fr; }
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem 1rem;
+}
+.socials li { font-size: 0.9rem; }
+.socials a {
+  color: #e8d6b8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.phone-block {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  margin: 1.5rem 0;
+}
+.phone-block h3 { margin-top: 0; }
+.phone-block table.list { margin: 0.5rem 0 0; }
+
+.social-block {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  margin: 1.5rem 0;
+}
+.social-block h3 { margin-top: 0; }
+.social-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.5rem 1.5rem;
+}
+.social-block li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+}
+.social-block .platform {
+  display: inline-block;
+  min-width: 90px;
+  font-variant: small-caps;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+}
+
+.staff-info .direct {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+}
+.staff-info .linkedin {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
 }
 footer.site-footer h4 {
   color: var(--paper);
